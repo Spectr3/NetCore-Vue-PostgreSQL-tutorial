@@ -40,7 +40,7 @@ namespace SolarCoffee.Services.Customer
                 _db.SaveChanges();
                 return new ServiceResponse<Data.Models.Customer>
                 {
-                    IsSuccess = false,
+                    IsSuccess = true,
                     Message = "New customer added",
                     Time = DateTime.UtcNow,
                     Data = customer
